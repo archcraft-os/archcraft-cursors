@@ -1,0 +1,25 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=archcraft-cursor-lyra
+pkgver=1.0
+pkgrel=1
+pkgdesc="Lyra Cursor theme for Archcraft"
+url="https://github.com/archcraft-os/archcraft-cursors"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=()
+conflicts=()
+groups=(archcraft-cursors)
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _cursorsdir=${pkgdir}/usr/share/icons
+	mkdir -p "$_cursorsdir"
+	cp -r ${srcdir}/* "$_cursorsdir"
+}
