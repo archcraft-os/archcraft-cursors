@@ -2,7 +2,7 @@
 
 pkgname=archcraft-cursor-lyra
 pkgver=1.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Lyra Cursor theme for Archcraft"
 arch=('any')
 url="https://github.com/archcraft-os/archcraft-cursors"

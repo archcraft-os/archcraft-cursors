@@ -2,7 +2,7 @@
 
 pkgname=archcraft-cursor-sweet
 pkgver=1.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Sweet Cursor theme for Archcraft"
 arch=('any')
 url="https://github.com/archcraft-os/archcraft-cursors"

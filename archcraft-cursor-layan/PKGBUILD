@@ -2,7 +2,7 @@
 
 pkgname=archcraft-cursor-layan
 pkgver=1.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Layan Cursor theme for Archcraft"
 arch=('any')
 url="https://github.com/archcraft-os/archcraft-cursors"
