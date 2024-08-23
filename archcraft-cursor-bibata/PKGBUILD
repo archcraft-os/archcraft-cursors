@@ -1,0 +1,21 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=archcraft-cursor-bibata
+pkgver=1.0
+pkgrel=0
+pkgdesc="Bibata Cursor theme for Archcraft"
+arch=('any')
+url="https://github.com/archcraft-os/archcraft-cursors"
+license=('GPL3')
+groups=(archcraft-cursors)
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. "$srcdir"
+}
+
+package() {
+	local _cursorsdir="$pkgdir"/usr/share/icons
+	mkdir -p "$_cursorsdir"
+	cp -r "$srcdir"/* "$_cursorsdir"
+}
